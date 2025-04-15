@@ -23,7 +23,50 @@
     text-align: center;
     padding: 40px 20px;
 }
+    /* Styl dla logo KNX */
+.logo-knx {
+    width: 100px; /* Ustawienie szerokości logo */
+    position: fixed; /* Ustawienie stałej pozycji */
+    top: 30%; /* Pozycja logo na osi Y (od góry strony) */
+    opacity: 0; /* Początkowa przezroczystość */
+    animation: fadeIn 2s ease-in-out forwards; /* Animacja pojawiania się */
+    z-index: 10; /* Ustawienie na wierzchu */
+}
 
+/* Logo po lewej stronie */
+.logo-knx.left {
+    left: 20px; /* Ustawienie logo po lewej */
+    animation-delay: 0.5s; /* Opóźnienie animacji */
+}
+
+/* Logo po prawej stronie */
+.logo-knx.right {
+    right: 20px; /* Ustawienie logo po prawej */
+    animation-delay: 1s; /* Opóźnienie animacji */
+}
+
+/* Definicja animacji */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Początkowa przezroczystość */
+        transform: translateY(20px); /* Początkowa pozycja (przesunięcie w pionie) */
+    }
+    to {
+        opacity: 1; /* Końcowa przezroczystość */
+        transform: translateY(0); /* Końcowa pozycja (normalna) */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
         /* Stopka */
         footer {
     background-color: #1a1a1a; /* Czarna stopka */
@@ -119,6 +162,10 @@
         <i class="fas fa-envelope"></i> E-mail: <a href="mailto:daniel@email.com">danie_zz@o2.pl</a>
     </h1>
 </footer>
+        <<!-- Logo KNX po lewej stronie -->
+<img src="knx-logo.png" alt="Logo KNX" class="logo-knx left">
 
+<!-- Logo KNX po prawej stronie -->
+<img src="knx-logo.png" alt="Logo KNX" class="logo-knx right">
 </body>
 </html>
