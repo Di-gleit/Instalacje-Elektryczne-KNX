@@ -18,64 +18,56 @@
 
         /* Nagłówek */
         header {
-    background-color: #1a1a1a; /* Czarny nagłówek */
-    color: #FFD700; /* Złoty kolor tekstu */
-    text-align: center;
-    padding: 40px 20px;
-}
-    /* Styl dla logo KNX */
-.logo-knx {
-    width: 100px; /* Ustawienie szerokości logo */
-    position: fixed; /* Ustawienie stałej pozycji */
-    top: 30%; /* Pozycja logo na osi Y (od góry strony) */
-    opacity: 0; /* Początkowa przezroczystość */
-    animation: fadeIn 2s ease-in-out forwards; /* Animacja pojawiania się */
-    z-index: 10; /* Ustawienie na wierzchu */
-}
+            background-color: #1a1a1a; /* Czarny nagłówek */
+            color: #FFD700; /* Złoty kolor tekstu */
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-/* Logo po lewej stronie */
-.logo-knx.left {
-    left: 20px; /* Ustawienie logo po lewej */
-    animation-delay: 0.5s; /* Opóźnienie animacji */
-}
+        /* Styl dla logo KNX */
+        .logo-knx {
+            width: 200px; /* Ustawienie szerokości logo */
+            position: fixed; /* Ustawienie stałej pozycji */
+            top: 30%; /* Pozycja logo na osi Y (od góry strony) */
+            opacity: 0; /* Początkowa przezroczystość */
+            animation: fadeIn 2s ease-in-out forwards; /* Animacja pojawiania się */
+            z-index: 10; /* Ustawienie na wierzchu */
+        }
 
-/* Logo po prawej stronie */
-.logo-knx.right {
-    right: 20px; /* Ustawienie logo po prawej */
-    animation-delay: 1s; /* Opóźnienie animacji */
-}
+        /* Logo po lewej stronie */
+        .logo-knx.left {
+            left: 20px; /* Ustawienie logo po lewej */
+            animation-delay: 0.5s; /* Opóźnienie animacji */
+        }
 
-/* Definicja animacji */
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Początkowa przezroczystość */
-        transform: translateY(20px); /* Początkowa pozycja (przesunięcie w pionie) */
-    }
-    to {
-        opacity: 1; /* Końcowa przezroczystość */
-        transform: translateY(0); /* Końcowa pozycja (normalna) */
-    }
-}
+        /* Logo po prawej stronie */
+        .logo-knx.right {
+            right: 20px; /* Ustawienie logo po prawej */
+            animation-delay: 1s; /* Opóźnienie animacji */
+        }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        /* Definicja animacji */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* Stopka */
         footer {
-    background-color: #1a1a1a; /* Czarna stopka */
-    color: #FFD700; /* Złoty kolor tekstu */
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-/* Linki w stopce (telefon, e-mail) */
+            background-color: #1a1a1a; /* Czarna stopka */
+            color: #FFD700; /* Złoty kolor tekstu */
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Linki w stopce (telefon, e-mail) */
         footer a {
             color: #fff; /* Biały kolor tekstu dla linków */
         }
@@ -84,6 +76,7 @@
             color: #FFD700; /* Złoty kolor tekstu przy najechaniu */
             text-decoration: underline;
         }
+
         /* Główna sekcja */
         main {
             padding: 20px;
@@ -111,9 +104,9 @@
         }
 
         ul li::before {
-    content: "✔️";
-    margin-right: 5px;
-    color: #77dd77;
+            content: "✔️";
+            margin-right: 5px;
+            color: #77dd77;
         }
 
         /* Linki */
@@ -157,15 +150,17 @@
 
     <!-- Stopka -->
     <footer>
-    <h1>
-        <i class="fas fa-phone"></i> Kontakt: <a href="tel:+48700200100">+48 123 456 789</a> |
-        <i class="fas fa-envelope"></i> E-mail: <a href="mailto:daniel@email.com">danie_zz@o2.pl</a>
-    </h1>
-</footer>
-        <<!-- Logo KNX po lewej stronie -->
-<img src="knx-logo.png" alt="Logo KNX" class="logo-knx left">
+        <h1>
+            <i class="fas fa-phone"></i> Kontakt: <a href="tel:+48700200100">+48 123 456 789</a> |
+            <i class="fas fa-envelope"></i> E-mail: <a href="mailto:daniel@email.com">danie_zz@o2.pl</a>
+        </h1>
+    </footer>
 
-<!-- Logo KNX po prawej stronie -->
-<img src="knx-logo.png" alt="Logo KNX" class="logo-knx right">
+    <!-- Logo KNX po lewej stronie -->
+    <img src="logo-knx.png" alt="Logo KNX" class="logo-knx left">
+
+    <!-- Logo KNX po prawej stronie -->
+    <img src="logo-knx.png" alt="Logo KNX" class="logo-knx right">
+
 </body>
 </html>
